@@ -20,19 +20,31 @@ body {
 }
 
 .logo,
-.left-menu,
 .center-menu,
 .right-menu {
   display: flex;
 }
 
-.left-menu a,
 .center-menu a,
 .right-menu a,
 .logo a {
   color: black;
   text-decoration: none;
   padding: 10px;
+}
+
+.center-menu a:hover {
+  background-color: #2b046e;
+  color: white;
+}
+
+.right-menu button:hover {
+  background-color: #2b046e;
+  color: white;
+}
+
+.right-menu a:hover {
+  color: white;
 }
 
 .center-menu {
@@ -50,9 +62,11 @@ body {
   margin: 30px;
   border: 2px solid black;
 }
+
 button {
   margin-right: 20px;
   background-color: white;
+  width: 90px;
 }
 
 /* hero section */
@@ -80,17 +94,17 @@ button {
 
 .arrow-button {
   display: inline-block;
-  font-size: 2em;
+  transform: rotate(90deg);
+  width: 10px;
+  height: 10px;
+  font-size: 3em;
   text-decoration: none;
   margin-top: 20px;
+  color: #333;
 }
 
 .arrow-button:hover {
-  transform: translateY(5px);
-  -webkit-transform: translateY(5px);
-  -moz-transform: translateY(5px);
-  -ms-transform: translateY(5px);
-  -o-transform: translateY(5px);
+  color: #8c55eb;
 }
 
 /* about section */
@@ -106,6 +120,7 @@ button {
   position: relative;
   text-align: center;
   margin: 0 auto;
+  padding-right: 40px;
 }
 
 .line {
@@ -121,7 +136,7 @@ button {
 }
 
 .right-line {
-  right: 15%;
+  right: 18%;
 }
 
 .about-heading h2 {
@@ -141,7 +156,6 @@ button {
 }
 
 .about-content p {
-  text-align: justify;
   line-height: 1.5;
   width: 60%;
 }
@@ -152,4 +166,17 @@ button {
   border: 3px solid #eee;
   border-radius: 8px;
   box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  .line {
+    display: inline-block; /* Hide the line on smaller screens */
+  }
+  .left-line {
+    left: 9%;
+  }
+
+  .right-line {
+    right: 16%;
+  }
 }
