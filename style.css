@@ -124,7 +124,7 @@ button {
   position: relative;
   text-align: center;
   margin: 0 auto;
-  padding-right: 40px;
+  padding: 0 40px 0 40px;
 }
 
 .line {
@@ -137,15 +137,17 @@ button {
 
 .left-line {
   left: 15%;
+  margin-left: 5px;
 }
 
 .right-line {
-  right: 18%;
+  right: 15%;
+  margin-right: 5px;
 }
 
 .about-heading h2 {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 20px 0 20px;
   margin: 0 auto;
 }
 
@@ -170,17 +172,106 @@ button {
   border: 3px solid #eee;
   border-radius: 8px;
   box-sizing: border-box;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+  }
+
+  .center-menu {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .center-menu a {
+    margin: 10px 0;
+  }
+
+  .right-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .logo {
+    margin: 10px 0;
+    width: 30px;
+  }
+
+  button {
+    margin: 10px 0;
+  }
+
+  .about-heading {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 40px 0 40px;
+  }
+
+  .about-heading h2 {
+    padding: 0 20px 0 20px;
+    margin: 0 auto;
+  }
+
   .line {
-    display: inline-block; /* Hide the line on smaller screens */
+    display: inline-block;
+    width: 20%;
+    position: absolute;
   }
   .left-line {
-    left: 9%;
+    left: 8%;
+    margin-left: 40px;
   }
 
   .right-line {
-    right: 16%;
+    right: 8%;
+    margin-right: 40px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .about-content p {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-content img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .line,
+  .left-line,
+  .right-line {
+    display: none;
+  }
+
+  .about-content {
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .about-content p {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-content img {
+    width: 100%;
+    height: auto;
   }
 }
