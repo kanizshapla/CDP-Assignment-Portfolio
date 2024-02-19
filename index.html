@@ -1,63 +1,325 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Assignment 01 CDP</title>
-  </head>
-  <body>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="#">J</a>
-      </div>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+        <script src="https://kit.fontawesome.com/b0cfd30411.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <section id="heading">
+            <header class="p-3 text-bg-dark">
+                <div class="container">
+                  <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                      <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+            
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                      <li><a href="#" class="nav-link px-2 text-secondary">About</a></li>
+                      <li><a href="#feature" class="nav-link px-2 text-white">Experience</a></li>
+                      <li><a href="#projects" class="nav-link px-2 text-white">Work</a></li>
+                      <li><a href="#contact-me" class="nav-link px-2 text-white">Contact</a></li>
+                      <li><a href="./assets/pdf/KanizFatema.pdf" class="nav-link px-2 text-white">Resume</a></li>
+                    </ul>
+            
+              
+                    <div class="text-end">
+                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#heading" class="nav-link px-2 text-white">Home</a></li>
+                       </ul>
+                      </div>
+                  </div>
+                </div>
+              </header>
+        </section>
+        <section id="heroes">
+            <div class="bg-dark text-secondary px-4 py-5 text-center">
+                <div class="py-5">
+                <img src="assets/kaniz.png" alt="profile" class="profile-img">
+                  <h1 class="display-5 fw-bold text-white">I am Kaniz Fatema</h1>
+                  <div class="col-lg-6 mx-auto">
+                    <h2 class="fs-5 mb-4">I Build Things for Web</h2>
+                    <p class= "mb-4">a passionate and dedicated web developer, creating
+                       exceptional websites and web applications. I specialize in full stack web development, 
+                       utilizing modern technologies such as HTML5, CSS3, JavaScript, React, NodeJs and responsive design 
+                       principles. I am constantly expanding my skills and staying up-to-date with the latest 
+                       industry trends to deliver the best possible user experiences.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                      <button type="button" class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"><a href="#projects">Check out my works!</a></button>
+                      <button type="button" class="btn btn-outline-light btn-lg px-4"><a href="#contact-me">Contact Me!</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+    
 
-      <div class="center-menu">
-        <a href="#about-section">about</a>
-        <a href="#">experience</a>
-        <a href="#">project</a>
-        <a href="#">contact</a>
-      </div>
-      <div class="right-menu">
-        <button><a class="resume-button" href="#">Resume</a></button>
-        <button><a class="hire-button" href="#">Hire Me</a></button>
-      </div>
-    </nav>
+        <section id="feature">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                          <h5 class="mb-4 display-6 lh-1 ">Education</h5>
+                          <ul class="list-group">
+                            <li class="list-group-item-dark bg-dark">
+                              Currently studying MSc. in CSE at East West University
+                            </li>
+                            <li class="list-group-item-dark bg-dark">
+                              Completed BSc. in CSE from IUBAT at 2018
+                            </li>
+                            <li class=" list-group-item-dark bg-dark">
+                                Completed HSC from CPSC BUSMS at 2012
+                              </li>
+                              <li class=" list-group-item-dark bg-dark">
+                                Completed SSC from RGGHSc at 2010
+                              </li>
+                           
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                          <h5 class="mb-4 display-6 lh-1">Work Experience</h5>
+                          <ul class="list-group">
+                            <li class="list-group-item-dark bg-dark">
+                             Worked as Software Engineer at Aurora Consulting 
+                            </li>
+                            <li class="list-group-item-dark bg-dark">
+                              Worked as IT Management Executive at Odyssey Apps Limited
+                            </li>
+                            
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+              
+                    <div class="col">
+                      <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                          <h5 class="mb-4 display-6 lh-1">Skills</h5>
+                          <ul class="list-group">
+                            <li class="list-group-item-dark bg-dark">
+                             HTML|CSS|Javascript|React|Node.js
+                            </li>
+                            <li class="list-group-item-dark bg-dark">
+                              Agile Methodologies|Scrum|Kanban
+                            </li>
+                            <li class="list-group-item-dark bg-dark">
+                               REST APIs|Responsive Web design
+                              </li>
+                              <li class="list-group-item-dark bg-dark">
+                                SQL|NOSQL|MySQL|AWS DynamoDB
+                              </li>
+                              <li class="list-group-item-dark bg-dark">
+                                Git|GitHub|GitLab|JIRA|Trello
+                               </li>
+                            <li class="list-group-item-dark bg-dark">
+                               Problem Solving|Team Collaboration
+                              </li>
 
-    <section class="hero-section">
-      <div class="hero-content">
-        <h1>Hi, I'm Kaniz Fatema</h1>
-        <p style="font-size: small">I design and build things</p>
-        <a href="#about-section" class="arrow-button">&raquo;</a>
-      </div>
-    </section>
+                            
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </section>
+        <section id="">
+           <div class="container text-center">
+            <div class="row py-lg-5">
+              <div class="col-lg-6 col-md-8 mx-auto ">
+                <h2 class=" fw-bold text-white">Projects</h2>
+              </div>
+            </div>
+           </div>
+          </section>
+        <section id="projects" >
+            <div class="album py-5 bg-body-tertiary" >
+                <div class="container">
+            
+                  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                      <div class="card shadow-sm">
+                         <img src="./assets/cine.png" alt="cine-critique" class="card-img">
+                        <div class="card-body">
+                          <p class="card-text">
+                            CineCritique is an innovative web-based project developed using Node.js, React, and JavaScript, offering a comprehensive platform for film enthusiasts to share their reviews and critique movies. The project
+                             seamlessly integrates both frontend and backend functionalities to create a cohesive user experience.
+                          </p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://cinecritique-web-app-inky.vercel.app/">View</a></button>
+                            
+                            </div>
+                      
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img src="./assets/newsletter.PNG" alt="newsletter" class="card-img">
+                        <div class="card-body">
+                          <p class="card-text">
+                            The newsletter signup feature is implemented using HTML, CSS, Bootstrap, and JavaScript to create a
+                             visually appealing and interactive form for users to subscribe to the newsletter.
+                             By utilizing HTML, CSS, Bootstrap, and JavaScript, this project creates an attractive and functional newsletter signup form.
+                            </p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://tasty-frog-housecoat.cyclic.app/">View</a></button>
+                           
+                            </div>
+                         
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
-    <section id="about-section" class="about-section">
-      <div class="about-heading">
-        <div class="line left-line"></div>
-        <h2>About</h2>
-        <div class="line right-line"></div>
-      </div>
-      <div class="about-content">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
-          amet vestibulum felis. Vivamus facilisis ligula id fringilla gravida.
-          Suspendisse ultricies sollicitudin lacus, et rutrum nunc bibendum sed.
-          <br />
-          <br />
-          Donec tincidunt tellus sed libero ultricies, eu semper enim molestie.
-          Etiam lorem quam, tincidunt nec malesuada eu, interdum nec leo.
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-          posuere cubilia curae; Morbi placerat tortor sed felis tristique.
-          <br />
-          <br />
-          Nunc aliquam magna ut nunc vestibulum, ut dictum nulla sagittis. Cras
-          egestas magna sed nisl pellentesque, sed lobortis felis convallis.
-          Phasellus eget ex at est lobortis iaculis eget non risus. Etiam
-          ultricies at est sit amet condimentum.
-        </p>
-        <img src="your-image.jpg" alt="About Image" />
-      </div>
-    </section>
-  </body>
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img src="./assets/dog-img.jpg" alt="tindog" class="card-img">
+                        <div class="card-body">
+                          <p class="card-text">
+                            The TinDog is implemented using HTML, CSS, Bootstrap, and JavaScript to create a
+                             visually appealing and interactive form for users to subscribe for monthly, or yearly basis.
+                             To make this project more functional , will implement node js and other responsive designs later.
+                            </p>
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/kanizshapla/Tindog">View</a></button>
+                           
+                            </div>
+                         
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                   
+                    <div class="col">
+                      <div class="card shadow-sm">
+                        <img src="./assets/online-shop.avif" alt="online shop" class="card-img">
+                        <div class="card-body">
+                          <p class="card-text">
+                            The online shop project is built using HTML, CSS, and JavaScript to create an interactive and visually appealing e-commerce platform.
+                            It's worth nothing that while HTML, CSS, and JavaScript are the primary technologies used for building the frontend of the online shop, the backend functionalities.
+                          <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://github.com/kanizshapla/cdp-assignment">View</a></button>
+                              
+                            </div>
+                           
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+       
+        <section id="contact-me">
+          <div class="px-4 py-5 my-5 text-center bg-dark">
+            <h2 class="display-5 fw-bold bg-dark">Contact Me</h2>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4 bg-dark">
+                <ul class="list-group list-unstyled" >
+                  <li class="list-group-item-dark ">
+                    Kaniz Fatema
+
+                  </li>
+                  <li class="list-group-item-dark bg-dark">Email: kanizshapla46@gmail.com</li>
+                <li class="list-group-item-dark bg-dark">  Phone: +8801762950412</li>
+                <li class="list-group-item-dark bg-dark">Address: Dhaka, Bangladesh</li>
+                <li class="list-group-item-dark bg-dark">LinkedIn: <a href="https://www.linkedin.com/in/kanizshapla46/">https://www.linkedin.com/in/kanizshapla46/</a></li>
+                <li class="list-group-item-dark bg-dark">GitHub: <a href="https://github.com/kanizshapla/">https://github.com/kanizshapla/</a></li>
+                </ul>
+              </p>
+              
+            </div>
+          </div>
+          <div class="flex items-center min-h-screen bg-gray-50 dark:bg-gray-900">
+            <div class="container mx-auto">
+              <div class="max-w-md mx-auto my-10 bg-dark p-5 rounded-md shadow-sm">
+                <div class="text-center">
+                  <h1 class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200">
+                    Write to Me
+                  </h1>
+                  <p class="text-gray-400 dark:text-gray-400">
+                    Fill up the form below to send me a message.
+                  </p>
+                </div>
+                <div class="m-7 bg-dark" id="contact-form">
+                  <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                    <input type="hidden" name="access_key" value="ce091383-7b7d-448a-93ff-6fe8acd3f6cf" />
+                    <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                    <input type="checkbox" name="botcheck" id="" style="display: none;" />
+          
+                    <div class="mb-6 bg-dark">
+                      <label for="name" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Full Name</label>
+                      <input type="text" name="name" id="name" placeholder="John Doe" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                    </div>
+                    <div class="mb-6">
+                      <label for="email" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Email Address</label>
+                      <input type="email" name="email" id="email" placeholder="you@company.com" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                    </div>
+                    <div class="mb-6">
+                      <label for="phone" class="text-sm text-gray-600 dark:text-gray-400">Phone Number</label>
+                      <input type="text" name="phone" id="phone" placeholder="+1 (555) 1234-567" required class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" />
+                    </div>
+                    <div class="mb-6">
+                      <label for="message" class="block mb-2 text-sm text-gray-600 dark:text-gray-400">Your Message</label>
+          
+                      <textarea rows="5" name="message" id="message" placeholder="Your Message" class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500" required></textarea>
+                    </div>
+                    <div class="mb-6">
+                      <button type="submit" class="w-full px-3 py-4 text-white bg-dark rounded-md focus:bg-indigo-600 focus:outline-none">
+                        Send Message
+                      </button>
+                    </div>
+                    <p class="text-base text-center text-gray-400" id="result"></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+          
+      
+
+        <section id="footer">
+          <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+              <p class="col-md-4 mb-0 text-white">© Kaniz</p>
+          
+              <a href="http://linkedin.com/kanizshapla46" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+              </a>
+          
+              <ul class="nav col-md-4 justify-content-end">
+                <li class="nav-item"><a href="#heading" class="nav-link px-2 text-white">Home</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link px-2 text-white">Projects</a></li>
+
+              </ul>
+            </footer>
+          </div>
+        </section>
+        <section>
+          <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-angles-up"></i></button>
+        </section>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+      </body>
 </html>
