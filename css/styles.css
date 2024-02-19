@@ -1,0 +1,96 @@
+body {
+  background-color: rgb(36, 34, 34);
+  color: beige;
+}
+.profile-img {
+  height: 200px;
+  border-radius: 50%;
+
+  align-items: center;
+  justify-content: center;
+}
+/* footer{
+    
+} */
+
+.card-img {
+  height: 250px;
+  width: 280px;
+  align-self: center;
+  margin-top: 10px;
+}
+
+.card {
+  height: 600px;
+  width: 300px;
+  background-color: rgb(26, 24, 24);
+  color: rgb(194, 194, 191);
+}
+
+#contact-me {
+  background-color: #01051e;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* animation */
+.css-selector {
+  background: linear-gradient(270deg, #1a1c1b, #695a67, #01051e);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 30s ease infinite;
+  -moz-animation: AnimationName 30s ease infinite;
+  animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 59%;
+  }
+  50% {
+    background-position: 100% 42%;
+  }
+  100% {
+    background-position: 0% 59%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 59%;
+  }
+  50% {
+    background-position: 100% 42%;
+  }
+  100% {
+    background-position: 0% 59%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 59%;
+  }
+  50% {
+    background-position: 100% 42%;
+  }
+  100% {
+    background-position: 0% 59%;
+  }
+}
